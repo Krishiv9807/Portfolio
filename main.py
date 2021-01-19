@@ -10,7 +10,7 @@ import requests
 from plyer import notification
 import pyjokes
 
-from Abilities import speakandlisten, get_weather, get_wiki, getjoke, gettime, google_and_yt_search, playsongs, repeatafterme, set_reminder, way_wycd_info, wishme
+from Abilities import speakandlisten, get_weather, get_wiki, getjoke, gettime, google_and_yt_search, playsongs, repeatafterme, set_reminder, way_wycd_info, wishme, checkrem
 
 
 
@@ -52,7 +52,7 @@ def main():
         repeatafterme.repeat_after_me()
     #checking if the query contains reminder in it
     elif "reminder" in query:
-        set_reminder.reminder()
+        checkrem
     #checking if the query is who are you
     elif query == "who are you":
         print ("My name is Jarvis. I am your AI Assistant")
@@ -82,13 +82,13 @@ def main():
         main()
 
 def activate_Jarvis():
-    while True:
-        #taking the query
-        query = speakandlisten.takeCommand()
-        if query is not None:
-            #checking if the query is Jarvis
-            if "Jarvis" in query:
-                wishme.wishMe()
+    # while True:
+    #     #taking the query
+    #     query = speakandlisten.takeCommand()
+    #     if query is not None:
+    #         #checking if the query is Jarvis
+    #         if "Jarvis" in query:
+    #             wishme.wishMe()
                 main()
 
 
