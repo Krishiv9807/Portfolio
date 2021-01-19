@@ -105,7 +105,7 @@ def activate_Jarvis():
         if query is not None:
             #checking if the query is Jarvis
             if "Jarvis" in query:
-                wishMe()
+                #wishMe()
                 main()
 
 
