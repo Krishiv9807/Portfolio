@@ -32,4 +32,4 @@ def takeCommand():
         print(s)
         
         
-        takeCommand()
+takeCommand()
