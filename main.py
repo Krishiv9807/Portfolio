@@ -82,13 +82,13 @@ def main():
         main()
 
 def activate_Jarvis():
-    # while True:
-    #     #taking the query
-    #     query = speakandlisten.takeCommand()
-    #     if query is not None:
-    #         #checking if the query is Jarvis
-    #         if "Jarvis" in query:
-    #             wishme.wishMe()
+    while True:
+        #taking the query
+        query = speakandlisten.takeCommand()
+        if query is not None:
+            #checking if the query is Jarvis
+            if "Jarvis" in query:
+                wishme.wishMe()
                 main()
 
 
