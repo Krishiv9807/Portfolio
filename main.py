@@ -10,27 +10,10 @@ import requests
 from plyer import notification
 import pyjokes
 
-from Abilities import get_weather, get_wiki, getjoke, gettime, google_and_yt_search, playsongs, repeatafterme, set_reminder, way_wycd_info, speakandlisten
+from Abilities import speakandlisten, get_weather, get_wiki, getjoke, gettime, google_and_yt_search, playsongs, repeatafterme, set_reminder, way_wycd_info, wishme
 
 
 
-def wishMe():
-    #getting the time
-    hour = int(datetime.datetime.now().hour)
-    
-    #checking that the time is between 4am and 12pm
-    if hour >= 4 and hour <= 12:
-        speakandlisten.speak("Good Morning Boss!")
-    
-    #checking that the time is between 12pm and 4pm
-    elif hour >= 12 and hour <16:
-        speakandlisten.speak("Good Afternoon Boss!")
-    
-    #telling the function to say Good Evening at other time
-    else:
-        speakandlisten.speak("Good Evening Boss!")
-    
-    speakandlisten.speak("How can I help you?")
 
 def main():
     
@@ -105,7 +88,7 @@ def activate_Jarvis():
         if query is not None:
             #checking if the query is Jarvis
             if "Jarvis" in query:
-                #wishMe()
+                wishme.wishMe()
                 main()
 
 
