@@ -5,7 +5,6 @@ import speech_recognition as sr
 engine = pyttsx3.init('sapi5')      
 #getting the voices available
 voices = engine.getProperty('voices')
-print(voices)
 #setting the voice for the assistant
 engine.setProperty('voice', voices[1].id)
 
@@ -14,6 +13,7 @@ def speak(audio):
     engine.runAndWait()
 
 def takeCommand():
+    print("take command")
     #recognizing the voice input
     mv = sr.Recognizer()
     #getting mic as source of input
@@ -32,4 +32,3 @@ def takeCommand():
         print(s)
         
         
-takeCommand()

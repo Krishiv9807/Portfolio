@@ -9,7 +9,7 @@ notification_icon = r'C:\Users\HP\Desktop\krishiv\Assistant\Abilities\notificati
 with open('rem' + '.json', 'r') as r:
     cr = json.load(r)
 
-while True:
+def remincheck():
         #checking if the time of the datime input is equal to current time
         if datetime.datetime.now().strftime("%I:%M %p") == cr['time']:
             #checking if the date of the datetime input in equal to currrent datetime
@@ -29,4 +29,5 @@ while True:
                 )
             else:
                 print("Try Again")
-            break
+
+remincheck()

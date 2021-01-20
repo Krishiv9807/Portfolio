@@ -52,7 +52,8 @@ def main():
         repeatafterme.repeat_after_me()
     #checking if the query contains reminder in it
     elif "reminder" in query:
-        checkrem
+        set_reminder.reminder()
+        checkrem.remincheck()
     #checking if the query is who are you
     elif query == "who are you":
         print ("My name is Jarvis. I am your AI Assistant")
