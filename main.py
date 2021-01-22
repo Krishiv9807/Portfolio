@@ -92,4 +92,4 @@ def activate_Jarvis():
                 wishme.wishMe()
                 main()
 
-main()
+activate_Jarvis()
