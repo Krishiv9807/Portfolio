@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: 0;
+            font-family: 'Freckle Face', cursive;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        .main_header{
+            width: 100vw;
+            height: 100vh;
+            background-color: hsl(0, 0%, 94%);
+            display: grid;
+            place-items: center;
+        }
+
+        .center_div{
+            min-width: 50vw;
+            height: 40vh;
+            background: -webkit-linear-gradient(#de6161, #2657eb);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: 25rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_header">
+        <div class="center_div">
+            <p>
+                Happy Birthday
+                <br>
+                Payas Bhaiya
+            </p>
+        </div>
+    </div>
+    <script src="./confetti.js"></script>
+    <script>
+        
+        //confetti.stop();
+
+        const startit = () => {
+            setTimeout(function() {
+                confetti.start();
+            }, 1000);
+        }
+        startit()
+    </script>
+</body>
+</html>
